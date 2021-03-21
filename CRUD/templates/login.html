@@ -1,0 +1,56 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Login
+{% endblock  %}
+{% block content %}
+    <div class="container-fluid mt-5">
+
+            <div class="row">
+                <!-- formulario -->
+                <div class="col-md-3">
+                    
+                </div>
+                <!-- SVG -->
+                <div class="col-md-6">
+                    <div class="container">
+                        <h3 class="text-center text-light fg-dark">Iniciar Secção!</h3>
+                        
+                        <form action="/login" method="POST" class="form-control">
+                            {% if status==True %}
+                                <div class="alert alert-success">
+                                    <p class="p-2 lead">Username e senha correspondem</p>
+                                </div>
+                            {% endif %}
+                            {% if status==False %}
+                                <div class="alert alert-danger">
+                                    <p class="p-2 lead">Username e senha não correspondem</p>
+                                </div>
+                            {% endif %}
+
+                            <div class="form-group mb-2">
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="nome" class="form-control" />
+                            </div>
+                            
+                        
+                            <div class="form-group mb-2">
+                              
+                                        <label for="nome">Senha:</label>
+                                <input type="password" name="senha" class="form-control" />
+                                       
+                                  
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn fg-white shadow bg-orange" >Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                </div>
+        </div>
+ 
+{% endblock  %}

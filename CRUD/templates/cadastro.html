@@ -1,0 +1,66 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+   Sign Up
+{% endblock  %}
+{% block content %}
+    <div class="container-fluid mt-5">
+
+            <div class="row">
+                <!-- formulario -->
+                <div class="col-md-3">
+                    
+                </div>
+                <!-- SVG -->
+                <div class="col-md-6">
+                    <div class="container">
+                        <h3 class="text-center text-light fg-dark">Cadastrar-se!</h3>
+                        <!-- {% if msg =='Cadastro efetuado com sucesso' %}
+                            <div class="alert alert-success">
+                                <p class="p-2 lead">{{ success }}</p>
+                            </div>
+                        {% else %}
+                        <div class="alert alert-danger">
+                            <p class="p-2 lead">{{ 'Ocorreu um erro ao cadastrar' }}</p>
+                        </div>
+                        {% endif %} -->
+                        
+                        <form action="/cadastro" method="POST" class="form-control">
+                        
+                            <div class="form-group">
+                        {% if msg ==True %}
+                        <div class="alert alert-success" >
+                            <p class="pb-0 lead">Cadastro efetuado com sucesso</p>
+                        </div>
+                        {%endif%}
+                            </div>
+                            <div class="form-group mb-2">
+                             
+                                <label for="nome">Nome:</label>
+                                <input type="text" name="nome" class="form-control" />
+                            </div>
+                            
+                        
+                            <div class="form-group mb-2">
+                              
+                                        <label for="nome">Senha:</label>
+                                <input type="password" name="senha" class="form-control" />
+                                       
+                                  
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn fg-white shadow bg-orange" >Sign Up</button>
+                                {% if msg ==True %}
+                                <a href="/login" class="btn fm-bg-blue shadow fg-white">Inicar Login</a>
+                                {%endif%}
+                            </div>
+                        </form>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                </div>
+        </div>
+ 
+{% endblock  %}

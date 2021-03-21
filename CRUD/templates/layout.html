@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trabalhando com SQLITE e FLASK" />
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../static/css/metro-colors.min.css" />
+    <link rel="stylesheet" href="../static/css/metro-text.css" />
+    <link rel="shortcut icon" href="../static/img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../static/css/bootstrap-icons/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../static/css/metro-icons.min.css" />
+    <link rel="stylesheet" href="../static/css/sheet.min.css">
+
+    <title>{% block title %}{%endblock %}</title>
+    <style>
+.fm-banne {background-image: url(../static/img/hero_2.jpg);background-size: cover;background-position: center bottom;
+background-repeat: no-repeat;background-attachment: fixed;width: 100%;height: 550px;}.fm-content {background-color: rgba(33, 42, 53, 0.514);
+background-attachment: fixed;width:100%;height: 550px;}
+.fm-md-5 {padding-top: 100px;}.fm-fg-gray{color:#F5F5F5}body{ font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+.fm-bg-blue{background-color: #0277BD;}.fm-bg-gray{background-color:#F5F5F5;}.fm-fg-dark{color:#576581;}
+.fm-img-ajust{width:100%;height:550px;size: cover; image-resolution:unset;}.fm-pt-5 {margin-top: 60px;}.fm-bg-grey{background-color:#f5f5f5;}
+</style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-amazon  " data-bs-role="navigation">
+            <div class="container">
+                <a href="/home" class="navbar navbar-brand fg-white">
+                    <img src="../static/img/icons8_python.svg" alt="" />PyCrud</a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
+                    <span class="mif-menu fg-white"></span>
+                </button>
+                <div class="navbar-collapse collapse" id="nav">
+                    <ul class="nav navbar-nav ms-auto">
+                        <li class="nav-item"><a href="/home" class="nav-link fg-white">Home</a></li>
+                        <li class="nav-item"><a href="/cadastro" class="nav-link fg-white">Cadastrar</a></li>
+                        
+                        <li class="nav-item"><a href="/login" class="nav-link fg-white">Login</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    {% block content %}
+
+    {% endblock %}
+
+  
+    <script src="../static/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+.text-ultralight {
+    font-weight: 100 !important;
+  }
+  .text-light {
+    font-weight: 200 !important;
+  }
+  .text-normal {
+    font-weight: 400 !important;
+  }
+  .text-medium {
+    font-weight: 500 !important;
+  }
+  .text-bold {
+    font-weight: 700 !important;
+  }
+  .display4 {
+    font-size: 7rem;
+    font-weight: 200;
+  }
+  .display3 {
+    font-size: 3.5rem;
+    font-weight: 400;
+  }
+  .display2 {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+  .display1 {
+    font-size: 2.25rem;
+    font-weight: 400;
+  }
+  .display1,
+  .display2,
+  .display3,
+  .display4 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+    line-height: 1;
+  }
+  .display4,
+  .display3,
+  .display2,
+  .display1 {
+    color: #757575;
+  }
+  .leader,
+  .h1,
+  h1 {
+    font-weight: 100;
+    font-size: 3rem;
+  }
+  .sub-leader,
+  .h2,
+  h2 {
+    font-weight: 400;
+    font-size: 2rem;
+  }
+  .header,
+  .h3,
+  h3 {
+    font-weight: 500;
+    font-size: 1.75rem;
+  }
+  .sub-header,
+  .h4,
+  h4 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .alt-header,
+  .h5,
+  h5 {
+    font-weight: 500;
+    font-size: 1.25rem;
+  }
+  .sub-alt-header,
+  .h6,
+  h6 {
+    font-weight: 500;
+    font-size: 1.125rem;
+  }
+  .text-small {
+    font-weight: 400;
+    font-size: 0.75rem;
+  }
+  .text-secondary {
+    font-weight: 400;
+    font-size: 0.875rem;
+  }
+  .text-leader {
+    font-size: 1.5rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .text-leader2 {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.2;
+  }
+  .text-muted {
+    color: #bebebe;
+  }
+  .leader,
+  .h1,
+  h1,
+  .sub-leader,
+  .h2,
+  h2,
+  .header,
+  .h3,
+  h3,
+  .sub-header,
+  .h4,
+  h4,
+  .alt-header,
+  .h5,
+  h5,
+  .sub-alt-header,
+  .h6,
+  h6 {
+    color: inherit;
+    margin: 1rem 0;
+    line-height: 1.1;
+  }
+  .text-upper {
+    text-transform: uppercase !important;
+  }
+  .text-lower {
+    text-transform: lowercase !important;
+  }
+  .text-cap {
+    text-transform: capitalize !important;
+  }
+  

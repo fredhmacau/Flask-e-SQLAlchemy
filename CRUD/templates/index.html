@@ -1,0 +1,61 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Search
+{% endblock  %}
+{% block content %}
+    <div class="container-fluid mt-5">
+
+            <div class="row">
+                <!-- formulario -->
+                <div class="col-md-3">
+                    
+                </div>
+                <!-- SVG -->
+                <div class="col-md-6">
+                    <div class="container">
+                        <h3 class="text-center text-light fg-dark">Pesquisar!</h3>
+                       
+                        <form action="/search" method="GET" class="form-control">
+                            
+                            <div class="form-group mb-2">
+                                <label for="nome">Nome:</label>
+                                <input type="search" name="search" class="form-control" />
+                            </div>
+                            
+                            <div class="form-group mb-2">
+                                <button type='submit' class="btn fg-white bg-gitlab">Search</button>
+                            </div>
+    
+                           
+                        </form>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-3"></div>
+                </div>
+                </div>
+        </div>
+
+        {% if status_search==True %}
+       <div class="container">
+        <table class="table table-striped table-hover table-condesed">
+             <!-- cabecalho da tabela -->
+        <thead>
+            <!-- linha da tabela -->
+            <tr>
+                <!-- cabelhalho da coluna -->
+                <th class="text-bold">Usuarios</th>
+                <th class="text-bold">Password Criptografada</th>
+            </tr>
+        </thead>
+            <tbody>
+                <td>{{ user.username }}</td>
+                <td>{{ user.password }}</td>
+            </tbody>
+        </table>
+       </div>
+            
+        {% endif %}
+ 
+{% endblock  %}
