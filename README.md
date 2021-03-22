@@ -23,13 +23,11 @@
  Depois simplesmente abre o seu navegador e insira o endereço `http:127.0.0.1:5000`.
 ![Exemplo 1 ]( https://github.com/fredhmacau/Flask-e-SQLAlchemy/blob/master/CRUD/screenshots/img1.jpeg)
 
+Um segundo exemplo
+![Exemplo 2 ]( https://github.com/fredhmacau/Flask-e-SQLAlchemy/blob/master/CRUD/screenshots/img2.jpeg)
+ # Requisitos 
 Os requisitos são simplesmente dois:
- ``` 
+  ``` 
 Flask==1.1.2
 Flask-SQLAlchemy==2.4.4
 ```
-
-
-![Exemplo 2 ]( https://github.com/fredhmacau/Flask-e-SQLAlchemy/blob/master/CRUD/screenshots/img2.jpeg)
- ## Requisitos 
- 
