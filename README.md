@@ -1,4 +1,4 @@
-# Flask e SQLAlchemy
+﻿# Flask e SQLAlchemy
  ---
  Este e um pequeno sistema de cadastro e login usando o `Flask`  que é um **Micro-framework** 
  E Também o ORM `SQLALchemy` através da extensão `Flask-SQLAlchemy`
@@ -21,10 +21,12 @@
  ```
 
  Depois simplesmente abre o seu navegador e insira o endereço `http:127.0.0.1:5000`.
-
+![Exemplo 1 ]( https://github.com/fredhmacau/Flask-e-SQLAlchemy/blob/master/CRUD/screenshots/img1.jpeg)
+![Exemplo 2 ]( https://github.com/fredhmacau/Flask-e-SQLAlchemy/blob/master/CRUD/screenshots/img2.jpeg)
  ## Requisitos 
  Os requisitos ssão simplesmente dois:
  ``` 
 Flask==1.1.2
 Flask-SQLAlchemy==2.4.4
 ```
+
